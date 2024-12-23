@@ -4,9 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .presentation {
+            flex: 1 1 500%;
+            padding-right: 40px;
+            box-sizing: border-box;
+        }
+
+        .presentation h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .presentation p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .profile-pic {
+            flex: 1 1 40%;
+            max-width: 600px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .profile-pic .caption {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                padding: 30px;
+            }
+
+            .presentation {
+                padding-right: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .presentation {
+                padding-right: 0;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .profile-pic {
+                max-width: 100%;
+            }
+
+            .profile-pic .caption {
+                margin-top: 10px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .presentation h2 {
+                font-size: 1.5em;
+            }
+
+            .presentation p {
+                font-size: 0.95em;
+            }
+
+            .profile-pic .caption {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Bienvenido a mi sitio en GitHub Pages!</h1>
-    <p>Este es un ejemplo básico, muy basico.</p>
+    <header>
+        <h1>Hi, I'm Nico.</h1>
+        <p>Page under construction</p>
+    </header>
+
+    <div class="container">
+        <div class="presentation">
+            <h2>Sobre Mí</h2>
+            <p>Hi, I am Nico. I'm a PhD student at Genoscope-LAGE Lab at Université Paris-Saclay. Before that, I obtained a master's degree in applied mathematics at Universidad de Chile.</p>
+            <p>I'm interested in the regulatory architecture of marine microbial communities using transcription factor profiles from metaG data and integrating gene regulation with environmental variables to provide insights into functional climate adaptations.</p>
+            <p>Currently, I am combining global climate data, biogeochemical cycles, and genomics to understand and predict future marine ecosystem scenarios, with a focus on dynamics.</p>
+            <p>This is my little corner on the internet where I occasionally write about things I find interesting or worth keeping somewhere other than my head. Expect a mix of science, math, and maybe some random thoughts—organized chaos at its best (or worst).</p>
+        </div>
+        <div class="profile-pic">
+            <img src="images/about_me.jpeg" alt="Foto de Nico">
+            <div class="caption">Nico en el laboratorio</div>
+        </div>
+    </div>
 </body>
 </html>
